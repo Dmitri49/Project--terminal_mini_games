@@ -1,0 +1,15 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "hexlet-project-2-js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dmitri lissin",
+  "license": "ISC",
+  "type": "module"
+}
