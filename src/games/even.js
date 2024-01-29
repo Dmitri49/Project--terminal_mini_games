@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import { getUserName, getRandomNummer } from '../src/index.js'
+import { getUserName, getRandomNummer } from '../index.js'
 
 const runEvenGame = () => {
     const userName = getUserName()

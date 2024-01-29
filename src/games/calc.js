@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import { getUserName, getRandomNummer } from '../src/index.js'
+import { getUserName, getRandomNummer } from '../index.js'
 
 const roundsCount = 3
 
@@ -17,7 +17,7 @@ const runCalcGame = () => {
             console.log('Correct!')
             count += 1
         } else {
-            console.log(`${answerOfPlayer} is wrong answer ;(. Correct answer was ${equasion.result}.`)
+            console.log(`'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${equasion.result}'.`)
             console.log(`Let's try again, ${userName}!`)
             count = 0
         }
