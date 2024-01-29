@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync'
+import { getUserName, getRandomNummer } from '../src/index.js'
 
 const runEvenGame = () => {
-    console.log('Welcome to the Brain Games!')
-    const userName = getName()
+    const userName = getUserName()
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
     let count = 0
 
     while (count < 3) {
-        let randomNumber = getRandomNumber()
+        let randomNumber = getRandomNummer(0, 100)
         console.log('Question: ' + randomNumber)
         const answerOfPlayer = readlineSync.question('Your answer: ')
 
@@ -24,16 +24,6 @@ const runEvenGame = () => {
     }
 
     console.log(`Congratulations, ${userName}!`)
-}
-
-const getName = () => {
-    const userName = readlineSync.question('May I have your name? ')
-    console.log(`Hello, ${userName}!`)
-    return userName
-}
-
-const getRandomNumber = () => {
-    return Math.floor(Math.random() * 100);
 }
 
 export {runEvenGame}
