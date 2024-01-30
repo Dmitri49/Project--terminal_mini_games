@@ -24,7 +24,7 @@ const runGcdGame = () => {
         `'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${gcdResult}'.`
       )
       console.log(`Let's try again, ${userName}!`)
-      count = 0
+      return
     }
   }
 

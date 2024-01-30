@@ -22,7 +22,7 @@ const runPrimeGame = () => {
         `'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
       )
       console.log(`Let's try again, ${userName}!`)
-      count = 0
+      return
     }
   }
 

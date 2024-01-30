@@ -19,7 +19,7 @@ const runProgressionGame = () => {
     } else {
       console.log(`'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${task.result}'.`)
       console.log(`Let's try again, ${userName}!`)
-      count = 0
+      return
     }
   }
 
