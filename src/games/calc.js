@@ -21,7 +21,7 @@ const runCalcGame = () => {
         `'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${equasion.result}'.`
       )
       console.log(`Let's try again, ${userName}!`)
-      count = 0
+      return
     }
   }
 
