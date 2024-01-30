@@ -7,17 +7,16 @@ const runEvenGame = () => {
     let count = 0
 
     while (count < 3) {
-        let randomNumber = getRandomNummer(0, 100)
+        const randomNumber = getRandomNummer(0, 100)
+        const correctAnswer = isEven(randomNumber) ? 'yes' : 'no'
         console.log('Question: ' + randomNumber)
         const answerOfPlayer = readlineSync.question('Your answer: ')
 
-        if (randomNumber % 2 === 0 && answerOfPlayer === 'yes') {
-            console.log('Correct!')
-            count += 1
-        } else if (randomNumber % 2 !== 0 && answerOfPlayer === 'no') {
+        if (answerOfPlayer === correctAnswer) {
             console.log('Correct!')
             count += 1
         } else {
+            console.log(`'${answerOfPlayer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
             console.log(`Let's try again, ${userName}!`)
             count = 0
         }
@@ -25,5 +24,7 @@ const runEvenGame = () => {
 
     console.log(`Congratulations, ${userName}!`)
 }
+
+const isEven = (num) => num % 2 === 0;
 
 export {runEvenGame}
