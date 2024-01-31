@@ -9,7 +9,7 @@
 #### Open console and execute:
   To clone repository:
   ```sh
-git clone [https://github.com/RainZerg/frontend-project-44](https://github.com/Dmitri49/terminal_mini_games.git)
+git clone https://github.com/Dmitri49/terminal_mini_games.git
 ```
   To install project:
   ```
